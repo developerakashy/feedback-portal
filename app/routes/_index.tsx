@@ -33,7 +33,7 @@ export const  loader: LoaderFunction = async ({request}) => {
     fields: ['id', 'title', 'description', 'status', 'created_by.email', 'created_by.first_name'],
     sort: ['-created_at'],
   }))
-  console.log("user", user)
+
   const headers = new Headers();
 
   if(sessionUpdated){
@@ -63,7 +63,7 @@ export default function Index() {
     closeModal()
   },[actionData])
 
-  console.log(feedbacks[0])
+  
   return (
     <div>
       <Modal
