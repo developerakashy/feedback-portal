@@ -1,40 +1,38 @@
-# Welcome to Remix!
+# 📝 Community Feedback Portal
 
-- 📖 [Remix docs](https://remix.run/docs)
+A mini feedback system built with **Remix**, **Mantine UI**, and **Directus**.
+Users can submit, review, and manage feedback based on their role (Admin or Member).
 
-## Development
+---
 
-Run the dev server:
+## 🚀 Summary
 
-```sh
-npm run dev
-```
+This app allows:
+- **Members** to submit and view feedback.
+- **Admins** to review and manage submitted feedback.
 
-## Deployment
+Built to demonstrate understanding of Directus collections, permissions, authentication, and CRUD operations.
 
-First, build your app for production:
+---
 
-```sh
-npm run build
-```
+## 🔐 Test Credentials
 
-Then run the app in production mode:
+### 👤 Admin
+- **Email**: admin@admin.com
+- **Password**: admin123
 
-```sh
-npm start
-```
+### 👤 Member
+- **Email**: user@ex.com
+- **Password**: user1234
 
-Now you'll need to pick a host to deploy it to.
+---
 
-### DIY
+## ⚙️ Environment Setup
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+Create a `.env` file at the root of your project with the following:
 
-Make sure to deploy the output of `npm run build`
+```env
+# .env
+DIRECTUS_URL=http://128.140.75.83:2222
+SESSION_SECRET=jfn849ry47fbeuw
 
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
